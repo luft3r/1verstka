@@ -1,0 +1,422 @@
+html, body {
+    overflow-x: hidden;
+}
+body {
+    font-family: 'Rubik Mono One', 'Consolas', 'Courier New', monospace;
+    background: #181c1b !important;
+}
+header {
+    background: rgba(17,22,27,0.95);
+    padding: 30px 0 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 10px #0007;
+    border: none;
+    border-radius: 0;
+}
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 2.3em;
+    color: #e5552b;
+    letter-spacing: 1px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+nav a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.2s, text-shadow 0.2s;
+}
+nav a:hover {
+    color: #e5552b;
+    text-shadow: 0 0 8px #e5552b88;
+}
+.download-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 32px;
+    background: linear-gradient(90deg, #e5552b 60%, #ffb347 100%);
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 4px 16px #e5552b44;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+.download-btn:hover {
+    background: linear-gradient(90deg, #ffb347 0%, #e5552b 100%);
+    transform: scale(1.05);
+    box-shadow: 0 6px 24px #e5552b77;
+}
+main, .profile-header, .gallery-placeholder, .arima-block, .haise-block, footer {
+    background: rgba(16, 19, 18, 0.5) !important;
+    border-radius: 8px;
+    border: 2px solid #b30024;
+    box-shadow: 0 0 24px #b3002422;
+}
+.profile-header {
+    width: 1000px;
+    height: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px !important;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0 20px 0;
+    background: #101312;
+    border-bottom: 2px solid #b30024;
+    box-shadow: none;
+}
+.avatar {
+    width: 500px;
+    height: 500px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 2px solid #b30024;
+    object-fit: cover;
+    background: #222;
+    margin-bottom: 10px;
+    box-shadow: 0 0 16px #b3002455;
+    image-rendering: pixelated;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.arima-avatar {
+    width: 150px;
+    height: 1500px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #b30024;
+    margin-bottom: 10px;
+    box-shadow: 0 0 12px #b3002455;
+    background: #222;
+    image-rendering: crisp-edges;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.profile-header h1 {
+    margin: 0 0 8px 0;
+    font-size: 1.7em;
+    color: #b30024;
+    font-family: inherit;
+    text-shadow: 0 0 8px #b30024aa;
+    text-align: center;
+    width: 100%;
+    padding-left: 0.6em;
+}
+.insta-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    padding: 7px 22px;
+    background: #181c1b;
+    color: #b30024;
+    font-size: 1em;
+    font-family: inherit;
+    border: 1.5px solid #b30024;
+    border-radius: 6px;
+    box-shadow: 0 0 8px #b3002455;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+.insta-btn:hover {
+    background: #b30024;
+    color: #181c1b;
+    box-shadow: 0 0 16px #b30024cc;
+}
+main {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #101312;
+    border-radius: 8px;
+    border: 2px solid #b30024;
+    box-shadow: 0 0 24px #b3002422;
+}
+.profile-header {
+    width: 640px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px !important;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0 20px 0;
+    background: #101312;
+    border-bottom: 2px solid #b30024;
+    box-shadow: none;
+}
+.avatar {
+    width: 300px;
+    height: 500px;
+    border-radius: 8px;
+    border: 2px solid #b30024;
+    object-fit: cover;
+    background: #222;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    box-shadow: 0 0 16px #b3002455;
+    image-rendering: pixelated;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.arima-avatar {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #b30024;
+    margin-bottom: 10px;
+    box-shadow: 0 0 12px #b3002455;
+    background: #222;
+    image-rendering: crisp-edges;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.profile-header h1 {
+    margin: 0 0 8px 0;
+    font-size: 1.7em;
+    color: #b30024;
+    font-family: inherit;
+    text-shadow: 0 0 8px #b30024aa;
+    text-align: center;
+    width: 100%;
+    padding-left: 0.6em;
+}
+.insta-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    padding: 7px 22px;
+    background: #181c1b;
+    color: #b30024;
+    font-size: 1em;
+    font-family: inherit;
+    border: 1.5px solid #b30024;
+    border-radius: 6px;
+    box-shadow: 0 0 8px #b3002455;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+.insta-btn:hover {
+    background: #b30024;
+    color: #181c1b;
+    box-shadow: 0 0 16px #b30024cc;
+}
+section {
+    margin-bottom: 32px;
+}
+.about p, .gallery-placeholder, .contacts a {
+    font-family: inherit;
+    color: #b30024;
+}
+.about p {
+    font-family: 'Orbitron', 'Rubik Mono One', 'Consolas', 'Courier New', monospace !important;
+    font-size: 1.1em;
+    letter-spacing: 1.2px;
+    color: #b30024;
+    text-shadow: 0 2px 8px #b3002477;
+    margin-bottom: 18px;
+}
+.gallery-placeholder {
+    text-align: center;
+    color: #b30024bb;
+    padding: 30px 0;
+    border: 1.5px dashed #b30024;
+    border-radius: 6px;
+    background: transparent !important;
+    font-size: 1em;
+}
+.contacts ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.contacts li {
+    margin-bottom: 8px;
+}
+.contacts a {
+    color: #b30024;
+    text-decoration: underline dotted #b30024;
+    font-weight: bold;
+    font-size: 1em;
+    transition: color 0.2s;
+}
+.contacts a:hover {
+    color: #fff;
+    text-shadow: 0 0 8px #b30024;
+}
+footer {
+    width: 640px;
+    height: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    
+    text-align: center;    
+    border-top: 2px solid #b30024;
+    font-family: inherit;
+    font-size: 0.85em;
+    color: #b30024;
+}
+.blink {
+    display: inline-block;
+    width: 10px;
+    height: 1.2em;
+    background: #b30024;
+    margin-left: 4px;
+    animation: blink 1s steps(1) infinite;
+    vertical-align: middle;
+}
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+@media (max-width: 700px) {
+    main {
+        padding: 8px;
+    }
+    .avatar {
+        width: 60px;
+        height: 60px;
+    }
+    .profile-header {
+        width: 98vw;
+        min-width: 0;
+        height: auto;
+        max-width: 98vw;
+    }
+    .profile-header h1 {
+        font-size: 1em;
+    }
+}
+.arima-block {
+    background: transparent !important;
+    border: 2px solid #b30024;
+    border-radius: 8px;
+    margin: 32px 0;
+    padding: 18px 14px 14px 14px;
+    text-align: center;
+    box-shadow: none !important;
+}
+.arima-block h2 {
+    color: #b30024;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    font-family: inherit;
+    letter-spacing: 1px;
+}
+.arima-block blockquote {
+    color: #fff;
+    font-style: italic;
+    font-size: 1.05em;
+    margin: 0 0 10px 0;
+    border-left: 3px solid #b30024;
+    padding-left: 12px;
+    opacity: 0.85;
+}
+.arima-mask {
+    font-family: 'Fira Mono', 'Consolas', 'Courier New', monospace;
+    color: #b30024;
+    font-size: 1.3em;
+    margin: 10px 0 8px 0;
+    letter-spacing: 2px;
+    line-height: 1.1;
+    text-shadow: 0 0 8px #b3002455;
+}
+.haise-block {
+    background: transparent !important;
+    border: 2px solid #b30024;
+    border-radius: 8px;
+    margin: 32px 0;
+    padding: 18px 14px 14px 14px;
+    text-align: center;
+    box-shadow: none !important;
+}
+.haise-block h2 {
+    color: #b30024;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    font-family: inherit;
+    letter-spacing: 1px;
+}
+.haise-block blockquote {
+    color: #fff;
+    font-style: italic;
+    font-size: 1.05em;
+    margin: 0 0 10px 0;
+    border-left: 3px solid #b30024;
+    padding-left: 12px;
+    opacity: 0.85;
+}
+.haise-desc {
+    color: #b30024bb;
+    font-size: 0.98em;
+    margin-top: 6px;
+    font-family: inherit;
+}
+@font-face {
+    font-family: 'FeastOfFlesh';
+    src: url('https://fonts.cdnfonts.com/s/14697/FeastofFleshBB.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+.about h2 {
+    font-family: 'Rubik Mono One', 'Consolas', 'Courier New', monospace;
+    font-size: 2.1em;
+    letter-spacing: 2px;
+    color: #b30024;
+    margin-bottom: 12px;
+    text-shadow: 0 2px 8px #b3002477;
+}
+.background-haise {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.13;
+    background: url('https://i.gifer.com/6zjx.gif') center center/cover no-repeat, #181c1b;
+    animation: haise-bg-fade 16s linear infinite alternate;
+    display: block !important;
+}
+body > *:not(.background-haise) {
+    position: relative;
+    z-index: 1;
+}
+.gallery h2, .contacts h2 {
+    color: #b30024;
+}
