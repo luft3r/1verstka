@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
             footer: '&copy; 2025 luft3r.dev@gmail.com'
         },
         ua: {
-            about: 'про мене',
+            about: 'about me',
             aboutText: 'Привіт! Перша спроба верстки сайту.<br>Тут ви знайдете мої контакти, а нижче — улюблений аніме персонаж.',
             haise: 'Хайсе Сасакі',
             haiseQuote: '"Я хочу захищати людей, навіть якщо це буде коштувати мені всього."',
