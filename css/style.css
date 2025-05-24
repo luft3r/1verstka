@@ -1000,3 +1000,52 @@ body, html {
     background: #b30024;
     transition: width 0.3s ease;
 }
+/* --- Мобильная версия --- */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .profile-header {
+        text-align: center;
+    }
+
+    .profile-header img.avatar {
+        width: 100px;
+        height: 100px;
+    }
+
+    .gallery-placeholder {
+        font-size: 12px;
+    }
+
+    .achievements-neo ul.achievements-list {
+        padding: 0;
+    }
+
+    .achievements-neo li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .ach-progress {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .feedback-form input, .feedback-form textarea {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .share-btns {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .contacts ul {
+        padding: 0;
+        text-align: center;
+    }
+}
