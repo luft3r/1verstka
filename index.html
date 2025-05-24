@@ -10,6 +10,11 @@
 <body>
     <div class="background-haise"></div>
     <div class="center-bg"></div>
+    <div class="lang-switcher">
+        <button class="lang-btn" data-lang="ru">RU</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="ua">UA</button>
+    </div>
     <header class="profile-header">
         <img class="avatar" src="https://ybis.ru/wp-content/uploads/2023/09/sasaki-khaise-10.webp" alt="Хайсе Сасаки" />
         <h1>luft3r<span class="blink"></span></h1>
@@ -31,15 +36,81 @@
         <section class="contacts">
             <h2>Контакты</h2>
             <ul>
-                <li><a href="https://instagram.com/luft3r" target="_blank">Instagram</a></li>
-                <li><a href="https://t.me/luft3r" target="_blank">Telegram</a></li>
-                <li><a href="https://github.com/luft3r" target="_blank">GitHub</a></li>
+                <li><a class="insta-link" href="https://instagram.com/luft3r" target="_blank">Instagram</a></li>
+                <li><a class="telegram-link" href="https://t.me/luft3r" target="_blank">Telegram</a></li>
+                <li><a class="github-link" href="https://github.com/luft3r" target="_blank">GitHub</a></li>
             </ul>
         </section>
+        <section class="achievements">
+            <h2>Достижения</h2>
+            <ul>
+                <li>Сделал свой первый сайт</li>
+                <li>Изучаю CSS и JS</li>
+            </ul>
+        </section>
+        <section class="about-cards">
+            <h2>Обо мне</h2>
+            <div class="cards-row">
+                <div class="about-card">Любимый жанр: киберпанк</div>
+                <div class="about-card">Хобби: аниме, музыка, кодинг</div>
+                <div class="about-card">Любимая цитата: “В этом мире есть вещи, которые нельзя защитить...”</div>
+            </div>
+        </section>
+        <!-- 5. Аниме-цитата дня -->
+        <section class="anime-quote">
+            <h2>Цитата дня</h2>
+            <blockquote id="anime-quote-text">“В этом мире есть вещи, которые нельзя защитить...”</blockquote>
+        </section>
+        <section class="feedback">
+            <h2>Обратная связь</h2>
+            <form class="feedback-form" action="#" method="POST" autocomplete="off">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="email" name="email" placeholder="E-mail" required>
+                <textarea name="message" placeholder="Сообщение" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+        <!-- 9. Гостевая книга -->
+        <section class="guestbook">
+            <h2>Гостевая книга</h2>
+            <form class="guestbook-form" autocomplete="off">
+                <input type="text" name="guestname" placeholder="Ваше имя" required>
+                <textarea name="guestmsg" placeholder="Ваш комментарий" required></textarea>
+                <button type="submit">Оставить запись</button>
+            </form>
+            <ul class="guestbook-list"></ul>
+        </section>
+        <!-- 12. Кнопки поделиться -->
+        <section class="share-block">
+            <h2>Поделиться сайтом</h2>
+            <div class="share-btns">
+                <button class="share-btn" data-share="vk">VK</button>
+                <button class="share-btn" data-share="tg">Telegram</button>
+                <button class="share-btn" data-share="wa">WhatsApp</button>
+                <button class="share-btn" data-share="copy">Скопировать ссылку</button>
+            </div>
+        </section>
+        <button id="to-top" title="Наверх">▲</button>
+        <!-- Админ-панель для гостевой книги -->
+        <div class="admin-panel" id="admin-panel" style="display:none;">
+            <h3>Админ-панель</h3>
+            <button id="admin-logout">Выйти</button>
+            <ul class="admin-guestbook-list"></ul>
+        </div>
+        <div class="admin-login-block" id="admin-login-block" style="display:none;">
+            <h3>Вход для администратора</h3>
+            <input type="password" id="admin-pass" placeholder="Пароль">
+            <button id="admin-login-btn">Войти</button>
+            <div id="admin-login-error" style="color:#b30024;margin-top:8px;"></div>
+        </div>
     </main>
     <footer>
         <p>&copy; 2025 luft3r.dev@gmail.com</p>
     </footer>
+    <!-- 15. Пасхалка -->
+    <div id="easter-egg" title="Пасхалка!" style="display:none;position:fixed;bottom:10px;right:10px;z-index:1000;">
+        <img src="https://i.imgur.com/1Q9Z1Zm.png" alt="Kaneki Mask" style="width:60px;filter:drop-shadow(0 0 16px #b30024cc);">
+    </div>
     <script src="js/script.js"></script>
 </body>
 </html>
